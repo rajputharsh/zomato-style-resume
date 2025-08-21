@@ -1,0 +1,71 @@
+/* Zomato-Style Resume CSS */
+
+/* Import Google Fonts - Zomato uses Okra but we'll use similar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables for Zomato Brand Colors */
+:root {
+  --zomato-red: #E23744;
+  --zomato-dark-red: #CB202D;
+  --zomato-orange: #FF7E8B;
+  --zomato-white: #FFFFFF;
+  --zomato-light-gray: #F8F8F8;
+  --zomato-gray: #9C9C9C;
+  --zomato-dark-gray: #363636;
+  --zomato-black: #1C1C1C;
+}
+
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--zomato-light-gray);
+  color: var(--zomato-dark-gray);
+  line-height: 1.6;
+}
+
+/* Header Styles inspired by Zomato */
+header {
+  background: linear-gradient(135deg, var(--zomato-red) 0%, var(--zomato-dark-red) 100%);
+  color: var(--zomato-white);
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(226, 55, 68, 0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Basic styling for content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Button styles similar to Zomato */
+.btn {
+  background: var(--zomato-red);
+  color: var(--zomato-white);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--zomato-dark-red);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(226, 55, 68, 0.3);
+}
